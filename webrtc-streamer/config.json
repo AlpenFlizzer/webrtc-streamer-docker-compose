@@ -1,5 +1,6 @@
 {
     "urls":{
-	    "Bunny": {"video": "rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov"}
+	    "Bunny": {"video": "rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov"},
+            "Bunny2": {"video": "rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov"}
     }
 }
