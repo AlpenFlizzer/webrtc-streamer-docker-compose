@@ -12,3 +12,10 @@ for the original webrtc-streamer see: https://github.com/mpromonet/webrtc-stream
 
 # access the streams
 if the container is up and running, webrtc-streamer provides a demo webserver at http://<ip-of-webrtc-streamer>:8000 where you can check your streams
+
+# access stream in own page
+this repo includes a demo html page, which demonstrates how to embed a video stream from webrtc-streamer in html. just edit the webrtc-streamer url in index.html and maybe the video-stream-id before you go.
+
+
+thanks to mpromonet for this cool project - all credits regarding webrtc-streamer go to him, I am just the noob who made a simple summary of this huge project for own purposes...
+finally there exists a reasonable solution to embed cctv-rtsp urls (and the like) in all the different smart home dashboards (and so on)!
