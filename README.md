@@ -9,3 +9,6 @@ for the original webrtc-streamer see: https://github.com/mpromonet/webrtc-stream
 - spin up the webrtc-streamer with "docker-compose up -d"
 - the file config.json is mounted as a volume into the container. to add/remove/edit the video sources, just edit the config.json file in the webrtc-streamer directory of this repo and restart the container. for details about the syntax of config.json see the original project.
 - for rtsp-sources (and others) with authentication, for the rtsp url as follows: rtsp://<username>.<password>@<ip>/bla/bla (be aware that these are stored in plain text in the config.json - just if you plan to push it to some public place like github ^^)
+
+# access the streams
+if the container is up and running, webrtc-streamer provides a demo webserver at http://<ip>:8000 where you can check your streams
