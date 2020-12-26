@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+ 
+  webrtc-streamer:
+    container_name: webrtc-streamer
+    restart: always
+    image: mpromonet/webrtc-streamer:latest
+    volumes:
+      - ./webrtc-streamer/config.json:/app/config.json
+    network_mode: "host"
