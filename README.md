@@ -19,6 +19,6 @@ this repo includes a demo html page, which demonstrates how to embed a video str
 # note
 tested on Raspberry PI 3b with Raspberry PI OS and on Ubuntu 20.04 LTS x86 (only git, docker and docker-compose has to be installed to make this thing work)
 
-
+# credits
 thanks to mpromonet for this cool project - all credits regarding webrtc-streamer go to him, I am just the noob who made a simple summary of this huge project for own purposes...
 finally there exists a reasonable solution to embed cctv-rtsp urls (and the like) in all the different smart home dashboards (and so on)!
