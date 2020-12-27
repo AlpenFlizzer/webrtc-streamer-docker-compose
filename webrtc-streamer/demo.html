@@ -1,9 +1,8 @@
 <html>
 
 <head>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/6.4.0/adapter.min.js"></script>
-    <script src="webrtcstreamer.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/6.4.0/adapter.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mpromonet/webrtc-streamer-html/webrtcstreamer.js"></script>
     <script>
         var webRtcServer = null;
         // webrtc-streamer is created at window load
@@ -11,7 +10,7 @@
             // create a webrtc-streamer: provide a video-tag-id and the url to the webrtc-streamer server. usually "http://<ip-of-webrtc-stream-server>:8000"
             webRtcServer = new WebRtcStreamer("video", "http://xxx.xxx.xxx.xxx:8000");
             // connect a stream: insert either an rtsp url directly or insert a video id according your config.json of the webrtc-streamer server
-            webRtcServer.connect("Bunny");
+            webRtcServer.connect("Curacao");
         }
         // webrtc-streamer is destroyed before the site is closed
         window.onbeforeunload = function () { webRtcServer.disconnect(); }
