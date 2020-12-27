@@ -16,6 +16,9 @@ if the container is up and running, webrtc-streamer provides a demo webserver at
 # access stream in own page
 this repo includes a demo html page, which demonstrates how to embed a video stream from webrtc-streamer in html. just edit the webrtc-streamer url in index.html and maybe the video-stream-id before you go.
 
+# note
+tested on Raspberry PI 3b with Raspberry PI OS and on Ubuntu 20.04 LTS x86 (only git, docker and docker-compose has to be installed to make this thing work)
+
 
 thanks to mpromonet for this cool project - all credits regarding webrtc-streamer go to him, I am just the noob who made a simple summary of this huge project for own purposes...
 finally there exists a reasonable solution to embed cctv-rtsp urls (and the like) in all the different smart home dashboards (and so on)!
