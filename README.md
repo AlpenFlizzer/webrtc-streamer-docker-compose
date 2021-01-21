@@ -6,14 +6,14 @@ for html demo see: https://github.com/mpromonet/webrtc-streamer-html
 for the original webrtc-streamer see: https://github.com/mpromonet/webrtc-streamer
 
 # usage of this repo
-- if you plan to use https, generate key and certificate according the readme in the directory webrtc-streamer/ssl
+- if you plan to use https, generate key and certificate according the readme in the directory webrtc-streamer/ssl. this directory should contain the key and cert acording the requirements of civetweb. it is mapped as a volume inside the container
 - in the docker-compose.yml you can edit the start flags of webrtc-streamer using the "command:" option. e.g. edit the ports, add path to ssl cert, etc...
 - spin up the webrtc-streamer with "docker-compose up -d"
 - the file config.json is mounted as a volume into the container. to add/remove/edit the video sources, just edit the config.json file in the webrtc-streamer directory of this repo and restart the container. for details about the syntax of config.json see the original project.
 - for rtsp-sources with authentication, provide the rtsp url as follows: rtsp://username:password@ip-of-webrtc-streamer/bla/bla (be aware that these are stored in plain text in the config.json, just if you plan to push it to some public place like github ^^)
 
 # access the streams
-if the container is up and running, webrtc-streamer provides a demo webserver at http://ip-of-webrtc-streamer:8000 where you can check your streams
+if the container is up and running, webrtc-streamer provides a demo webserver at http://ip-of-webrtc-streamer:8000 where you can check your streams. (port 8000 is default for http. if you changed the port and/or encryption, adopt the url accordingly)
 
 # access stream in own page
 this repo includes a demo html page, which demonstrates how to embed a video stream from webrtc-streamer in html. just edit the webrtc-streamer url in index.html and maybe the video-stream-id before you go.
