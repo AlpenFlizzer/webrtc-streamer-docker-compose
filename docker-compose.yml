@@ -10,6 +10,7 @@ services:
       - ./webrtc-streamer/config.json:/app/config.json
       - ./webrtc-streamer/ssl/:/app/ssl/
     # here you can set the start flags for webrtc-streamer. this overrides the defaults from the original Dockerfile
+    # original command from dockerfile: [ "-a", "-C", "config.json"]
     command: [ "-a", "-C", "config.json", "-H", "8000,9000s", "-c", "/app/ssl/server.pem"]
     # webrtc-streamer will listen on port http/8000 and on port https/9000 in this example. generate necessary key and cert in ssl directory before!
     network_mode: "host"
